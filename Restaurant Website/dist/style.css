@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Raleway', cursive;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* HEADER */
+header {
+  height: 176px;
+  width: 100%;
+  background-color: #F4F2EB;
+}
+
+.header-container {
+  max-width: 1170px;
+  height: 100%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 250px;
+  font-family: 'Forum', cursive;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 27px;
+}
+
+.header-container ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+}
+
+.header-container ul li {
+  margin-right: 66px;
+}
+
+.header-container ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 100;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.header-container ul li a:hover {
+  color: #7C6C50;
+}
+
+
+.order-btn {
+  padding: 15px 31px;
+  background-color: #7C6C50;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #534835;
+} 
+
+.fa-bars {
+  display: none !important;
+}
+
+/* HOME */
+.home-content-container {
+  height: 761px;
+  display: flex;
+  flex-direction: row;
+}
+
+.background-img {
+  width: 1210px;
+  background-image: url(images/bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: #F4F2EB;
+  width: 144px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sidebar-text {
+  writing-mode: vertical-lr;
+  text-orientation: sideways !important;
+  margin-left: 67px;
+  font-family: 'Forum', cursive ;
+  color: #7C6C50;
+  font-size: 22px;
+}
+
+.sidebar-text:nth-child(2){
+  justify-self: flex-start;
+}
+
+.vl {
+  border-left: 1px solid #090F0F ;
+  height: 349px;
+  margin-left: 75px;
+}
+
+/* INFO SECTION */
+
+.info {
+  height: 800px;
+  max-width: 100%;
+  background-color: #F4F2EB;
+  padding: 75px 90px;
+}
+
+.info-container {
+  width: 1115px;
+  height: 800px;
+  margin:  auto;
+  display: flex;
+  text-align: center;
+}
+
+
+.info-text {
+  width: 450px;
+  height: 800px;
+ text-align: center;
+ margin-top: 230px;
+ margin-right: 152px;
+}
+
+ 
+
+.info-img {
+  width: 553px;
+  height: 800px;
+  margin-right: 83px;
+  
+}
+
+.info-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.info-text h2 {
+  font-size: 48px;
+  font-family: 'Forum', cursive;
+  font-weight: 100;
+  margin-bottom: 60px;
+}
+
+.info-text p {
+  font-size: 16px;
+  margin-bottom: 60px;
+  line-height: 28px;
+}
+
+.info-btn {
+  padding: 26px 76px;
+  background-color: #7C6C50 ;
+  transition: 0.3s;
+}
+
+.info-btn:hover {
+  background-color: #534835;
+}
+
+/* About */
+.about {
+  width: 100%;
+  height: 880px;
+  position: relative;
+  background-image: url(images/big-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.about-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 521px;
+  height: 395px;
+  /* padding: 80px 103px; */
+  padding-bottom: 20px;
+  padding-top: 90px;
+  padding-left: 103px;
+  padding-right: 103px;
+  text-align: center;
+  background-color: #F4F2EB;
+}
+
+.about-card-content {
+  max-width: 435px;
+  height: 340px;
+  margin: auto;
+}
+
+.about-heading {
+  font-size: 48px;
+  font-family: 'Forum', cursive;
+  margin-bottom: 30px;
+  font-weight: 200;
+}
+
+.about-ph {
+  font-size: 16px;
+  margin-bottom: 58px;
+  line-height: 1.5rem;
+}
+
+.about-btn {
+  padding: 25px 60px;
+  background-color: #7C6C50;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #534835 ;
+}
+/* RESERVATIONS */
+
+.reservations {
+  max-width: 100%;
+  height: 314px;
+  background-color: #F4F2EB;
+  padding-top: 150px;
+}
+
+.reservations-content {
+  max-width: 889px;
+  height: 272px;
+  margin: auto;
+  text-align: center;
+}
+
+.reservations-header {
+  font-size: 48px;
+  font-weight: 200;
+  font-family: 'Forum', cursive;
+}
+
+.reservations-selector {
+  margin-top: 86px;
+}
+
+.selector-box option {
+ opacity: 0;
+}
+
+.selector-box {
+  width: 190px;
+  height: 41px;
+  padding-left: 5px;
+  margin-right: 21px;
+  border: 1px solid black;
+  background: transparent;
+}
+
+.reservations-btn {
+  width: 200px;
+  height: 42px;
+  background-color: #7C6C50;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reservations-btn:hover {
+  background-color: #534835 ;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 369px;
+  background-color: #090F0F;
+  padding-top: 100px;
+}
+
+.footer-content {
+  max-width: 890px;
+  margin-left: 240px;
+}
+
+.footer-links-container {
+ display: flex;
+ justify-content: space-between;
+}
+
+footer hr {
+ width: 100%;
+
+}
+
+.footer-header {
+  margin-bottom: 50px;
+  font-family: 'Forum', cursive;
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.footer-ph {
+  font-size: 18px;
+}
+
+.footer-links {
+  margin-bottom: 50px;
+  color: #F4F2EB;
+}
+
+.footer-socket {
+  color: #F4F2EB;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+  font-size: 14px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+/* media query */
+@media (max-width:480px) {
+   header {
+     height: 104px;
+    position: relative;
+   }
+
+   .header-container {
+    max-width: 100%;
+  }
+
+  .flex {
+    flex-direction: column-reverse;
+  }
+
+  .order-btn {
+    width: 100%;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom:  13px;
+  }
+
+  .logo {
+    margin-right: 0px;
+    width: 300px ;
+    margin: auto;
+  }
+
+
+
+  .fa-bars {
+    display: block !important;
+    z-index: 10000;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    font-size: 25px;
+  }
+
+  header ul {
+    display: none !important;
+  }
+
+  .home-content-container {
+    height: 410px;
+    width: 100%;
+    flex-direction: column !important;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .sidebar-text {
+    display: block;
+    writing-mode: horizontal-tb;
+    text-orientation: none !important;
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .sidebar-text:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  .background-img {
+    max-width: 100%;
+    height: 341px;
+    background-size: 100%;
+    background-attachment: scroll;
+  }
+
+  .info {
+    height: 600px;
+    width: 100%;
+    padding-top: 55px ;
+    padding-bottom: 150px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .info-container {
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .info-text {
+    max-width: 252px;
+    margin: auto;
+    padding-bottom: 70px;
+  }
+
+  .info-text h2 {
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+
+  .info-text p {
+    font-size: 16px;
+  }
+
+  .info-img {
+    max-width: 100%;
+    height: 267px;
+    margin: 0;
+  }
+
+  .info-img img {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .info-btn {
+    padding: 22px 58px;
+  }
+
+  .about-card {
+    
+    max-width: 320px;
+    height: 386px;
+    /* padding: 80px 103px; */
+    padding-bottom: 20px;
+    padding-top: 70px;
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+
+  .about-card-content {
+    max-width: 300px;
+    height: 330px;
+    margin: auto;
+  }
+
+  .about-btn {
+    padding: 22px 37px;
+  }
+
+  .about-heading {
+    font-size: 40px;
+  }
+
+  .about {
+    height: 900px;
+    background-attachment: scroll;
+    background-size: 800px 100%;
+  }
+
+  .reservations {
+    height: 420px;
+    width: 100%;
+    padding-top: 96px;
+  }
+
+  .reservations-content {
+    max-width: 280px;
+    height: 452px;
+  }
+
+  .reservations-selector {
+    flex-direction: column;
+  }
+
+  .selector-box {
+    width: 270px;
+    height: 40px;
+    padding-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .reservations-btn {
+    width: 270px;
+    height: 42px;
+  }
+
+  footer {
+    width: 100%;
+    height: 768px;
+    padding: 0;
+  }
+
+  .footer-content {
+    width: 241px;
+    margin: auto;
+    
+  }
+
+  .footer-links-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .footer-socket {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .social-links {
+    margin-bottom: 30px;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
